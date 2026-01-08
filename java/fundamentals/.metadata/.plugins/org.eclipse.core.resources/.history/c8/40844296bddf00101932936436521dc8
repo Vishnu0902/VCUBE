@@ -1,0 +1,21 @@
+package com.practice;
+
+import java.math.BigInteger;
+import java.math.BigDecimal;
+public class Bigobjects {
+	BigInteger bi;
+	BigDecimal bd;
+	
+
+	public static void main(String[] args) {
+		Bigobjects t1=new Bigobjects();
+		System.out.println("main method started");
+		
+		System.out.println("BigInteger:"+ t1.bi);
+		System.out.println("BigDecimal:"+ t1.bd);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\Vishnu_vcube\java\fundamentals\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1884708279.index
+742926170.index

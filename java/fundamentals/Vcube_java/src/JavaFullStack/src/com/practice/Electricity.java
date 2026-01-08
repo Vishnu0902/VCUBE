@@ -1,0 +1,34 @@
+package com.practice;
+
+public class Electricity {
+	double u=2192.91;
+	int CPU = 15;
+	static double GST = 0.05; 
+	double basebill = u*CPU;
+	double FinalBill=(basebill+(basebill*GST));
+	
+	void finalbill() {
+		System.out.println("Units: " + u);
+		System.out.println("Charge Per Unit : " + CPU);
+		System.out.println("GST percentage : " + GST);
+		calculategst(basebill);
+		System.out.println("BaseBill: " + basebill);
+		System.out.println("final bill: " + FinalBill);
+		
+	}
+	
+	static void calculategst(double basebill) {
+		var Tax = basebill*GST; 
+		System.out.println("GST:" +Tax);
+		
+	}
+	
+
+	public static void main(String[] args) {
+		Electricity e1 = new Electricity();
+		e1.finalbill();
+		
+
+	}
+
+}

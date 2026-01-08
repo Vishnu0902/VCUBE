@@ -1,0 +1,32 @@
+package com.practice;
+
+//import java.math.BigInteger;
+import java.math.BigDecimal;
+public class Employee {
+	
+	 BigDecimal bs1 = new BigDecimal("5000");//Basic Monthly Salary
+	 BigDecimal d = new BigDecimal("0.08");//Daily Allowance
+	 BigDecimal p = new BigDecimal("0.03");//PF
+	 BigDecimal cg1 = new BigDecimal("0.07");//CGST
+	 BigDecimal m = new BigDecimal("30");//Days in a Month
+	 BigDecimal AP = new BigDecimal("12");// Months in a Year
+	{
+//		Employee E1 = new Employee();
+		
+
+		 System.out.println("Basic Salary :" +bs1);
+		 System.out.println("DA :" + bs1.multiply(d));
+		 System.out.println("PF :" + bs1.multiply(p));
+		 System.out.println("CGST :" + bs1.multiply(cg1));
+		 System.out.println("SAlARY :" + bs1.add(((bs1.multiply(d)).multiply(m))).subtract((bs1.multiply(p).add(bs1.multiply(cg1)))));
+		 System.out.println("AP :" +( bs1.add(((bs1.multiply(d)).multiply(m))).subtract((bs1.multiply(p).add(bs1.multiply(cg1))))).multiply(AP));
+
+	}
+
+	public static void main(String[] args) {
+//		Employee e1 = new Employee();
+//		e1.Salary();
+		
+	}
+
+}

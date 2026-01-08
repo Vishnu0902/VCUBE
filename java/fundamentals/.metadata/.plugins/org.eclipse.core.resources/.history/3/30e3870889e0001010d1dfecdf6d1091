@@ -1,0 +1,34 @@
+package com.practice;
+
+import java.math.BigInteger;
+import java.math.BigDecimal;
+public class Employee {
+	
+	BigDecimal bs1;
+	BigDecimal d;
+	BigDecimal da1;
+	void Salary(){
+		Employee E1 = new Employee();
+		 E1.bs1 = new BigDecimal("5000");
+		 E1.d = new BigDecimal("0.08");
+//		 E1.d = new BigDecimal("");
+//		 BigDecimal pf1 = new BigDecimal("5000*3%");
+//		 BigDecimal cg1 = new BigDecimal("5000*7%");
+//		 BigDecimal ms1 = new BigDecimal("bs1+da1-pf1-cg1");
+//		 BigDecimal as1 = new BigDecimal("ms1*12");
+		 System.out.println(bs1);
+		 System.out.println("DA:" + E1.bs1.multiply(d));
+//		 System.out.println(pf1);
+//		 System.out.println(cg1);
+//		 System.out.println(ms1);
+//		 System.out.println(as1);
+//		 
+	}
+
+	public static void main(String[] args) {
+		Employee e1 = new Employee();
+		e1.Salary();
+		
+	}
+
+}

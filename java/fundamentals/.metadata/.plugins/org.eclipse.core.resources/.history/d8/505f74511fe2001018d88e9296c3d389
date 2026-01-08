@@ -1,0 +1,37 @@
+package com.practice;
+
+public class MarketingEmployee {
+	int Salary;
+	static double TA;
+	static double Internet;
+	double ID;
+	
+	static void Allowances() {
+		System.out.println("Total Allownces: " + (TA+Internet));
+		
+	}
+	
+	{
+		System.out.println("Total Deduction : " + ID);
+			
+	}
+	
+	void NetSalary() {
+		System.out.println("Net Salary : " + (Salary+TA+Internet-ID));
+		
+	}
+
+	public static void main(String[] args) {
+		MarketingEmployee e1 = new MarketingEmployee();
+		e1.Salary = 10000;
+		MarketingEmployee.TA = 0.12*10000;
+		MarketingEmployee.Internet = 0.03*10000;
+		e1.ID = 0.02*10000;
+		MarketingEmployee e2 = new MarketingEmployee();
+		MarketingEmployee.Allowances();
+//		e1.Deduction();
+		e1.NetSalary();
+
+	}
+
+}

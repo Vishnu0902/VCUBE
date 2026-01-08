@@ -1,0 +1,27 @@
+package com.practice;
+
+public class Vishnu {
+//	byte b= (byte)255;//explicit type casting //1 byte //8 bits //range -128 to 127
+//	short s = 32767;//2 bytes //16 bits //range -32768 to 32767
+//	int i = 2147483637;//4 bytes // 32 bits // range -2147483638 to 2147483637
+//	long L = 9223372036854775807L; //8 bytes // 64 bits 
+//	// range -9223372036854775807 to 9223372036854775807
+//	
+//	float f = 93.0374568F;// 4 bytes // 32 bits// range -> up to 5-6 decimal points.
+//	double d = 99.999999999999;// 8 bytes // 64 bits // range -> up to 8-10 decimal points.
+//	char c='S';//2 bytes // 16 bits/ range -32768 to 32767 . 
+//	//But we cannot store negative values in char. So range is 65535(32768+32767).
+//	boolean boo= true;
+	
+	int o=010;
+	int h=0xfa;
+	public static void main(String[] args) {
+		Vishnu v = new Vishnu();
+//		System.out.println(v.b);
+		System.out.println(v.o);
+		System.out.println(v.h);
+		
+		
+	}
+
+}

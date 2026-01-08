@@ -1,0 +1,25 @@
+
+public class PenFactory {
+	static int RM = 18000;
+	int LC = 12000;
+	int FO = 6000;
+	int AC = 7000;
+	double WM = 0.05*18000;
+	double SM = 0.02*18000 ;
+	double W = WM-SM;
+	
+	void Production() {
+		System.out.println("Production Cost");
+		System.out.println("Raw Material : "+);
+		
+		
+	}
+
+	public static void main(String[] args) {
+//		PenFactory p = new 
+		System.out.println(RM);
+		
+
+	}
+
+}

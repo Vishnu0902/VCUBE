@@ -1,0 +1,40 @@
+package com.practice;
+
+import java.math.BigDecimal;
+
+
+public class Exam1 {
+	BigDecimal S;
+	BigDecimal TA;
+	BigDecimal PF;
+	BigDecimal CGST;
+	BigDecimal TS;
+	BigDecimal TD;
+	BigDecimal MS;
+	BigDecimal M;
+	BigDecimal AS;
+	
+	
+
+	public static void main(String[] args) {
+		Exam1 e1 = new Exam1();
+		e1.S= new BigDecimal("7000");
+		e1.TA= new BigDecimal("0.12");
+		e1.PF= new BigDecimal("0.02");
+		e1.CGST= new BigDecimal("0.05");
+		e1.M= new BigDecimal("12");
+		e1.TS = (e1.S.multiply(e1.TA));
+		e1.TD = ((e1.S.multiply(e1.PF)).add((e1.S.multiply(e1.CGST))));
+		e1.MS=((e1.TS.subtract(e1.TD)));
+		e1.AS=(e1.MS.multiply(e1.M));
+		System.out.println("Gross Salary: " + e1.TS);
+		System.out.println("Total Deduction : " + e1.TD);
+		System.out.println("Net Salary: " + e1.MS);
+		System.out.println("Annual Salary: " + e1.AS);
+		
+		
+		
+
+	}
+
+}
